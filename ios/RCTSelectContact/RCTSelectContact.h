@@ -7,7 +7,9 @@
 
 @import Contacts;
 @import ContactsUI;
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
 
-@interface RCTSelectContact : NSObject <RCTBridgeModule, CNContactPickerDelegate>
+@interface RCTSelectContact : NSObject <RCTBridgeModule, CNContactPickerDelegate, CNContactViewControllerDelegate>
 
 @end
